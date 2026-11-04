@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JUST DOUGH IT BAKERY</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <h1>JUST DOUGH IT</h1>
+        <span>Fresh and Delicious!</span>
+    </div>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <a href="#header">HOME</a> |
+        <a href="#content">ORDER</a> |
+        <a href="#sidebar">PRICE LIST</a>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content">
+
+        <h2>Welcome to JUST DOUGH IT BAKERY!</h2>
+
+        <p>
+            We sell <strong>delicious cakes</strong> and
+            <em>fresh cupcakes</em> at affordable prices.
+            Visit our <a href="#sidebar">price list</a>.
+        </p>
+
+        <h2>Order Form</h2>
+
+        <!-- Order Form -->
+        <div>
+            <form oninput="total.value = cupcakes.value * 3 + slices.value * 5">
+
+                Name:
+                <input type="text" name="name"
+                placeholder="Your Name" required autofocus>
+                <br><br>
+
+                Phone:
+                <input type="tel" name="phone" required>
+                <br><br>
+
+                Email:
+                <input type="email" name="email" required>
+                <br><br>
+
+                Pick-up Date:
+                <input type="date" name="date">
+                <br><br>
+
+                Pick-up Time:
+                <input type="time" name="time">
+                <br><br>
+
+                Flavour:
+                <input list="flavours" name="flavour">
+
+                <datalist id="flavours">
+                    <option value="Chocolate">
+                    <option value="Vanilla">
+                    <option value="Strawberry">
+                    <option value="Red Velvet">
+                </datalist>
+
+                <br><br>
+
+                Icing Colour:
+                <input type="range" name="sweetness"
+                min="1" max="5" step="1">
+                <br><br>
+
+                Cupcakes (RM 3 each):
+                <input type="number" name="cupcakes"
+                min="0" max="100" value="0">
+                <br><br>
+
+                Cake Slices (RM 5 each):
+                <input type="number" name="slices"
+                min="0" max="100" value="0">
+                <br><br>
+
+                Total Price (RM):
+                <output name="total">0</output>
+                <br><br>
+
+                <input type="submit" value="Submit Order">
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+
+        <h2>Price List</h2>
+
+        <ul>
+            <li>Chocolate Cupcake - RM3</li>
+            <li>Vanilla Cupcake - RM3</li>
+            <li>Strawberry Cupcake - RM3</li>
+            <li>Red Velvet Cake Slice - RM5</li>
+        </ul>
+
+        <p>Orders over 10 pieces get a free drink.</p>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+
+        <p>&copy; 2026 JUST DOUGH IT Bakery. All Rights Reserved.</p>
+        <p>Contact: justdoughitbakery@gmail.com</p>
+        <p>RM 3.00 per cupcake</p>
+
+    </div>
+
+    <!-- Testing Observations -->
+
+    <p>
+        1. When submitting an empty form, the browser prevents
+        submission because required fields are empty.
+    </p>
+
+    <p>
+        2. When entering "myemail" in the email field, the browser
+        shows an error because the email format is invalid.
+    </p>
+
+</body>
+</html>
