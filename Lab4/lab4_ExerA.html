@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        #welcome {
+            background-color: #eaf7fb;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .caption {
+            color: #416579;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Visit Terengganu</h1>
+        <p>Discover the Beauty of Malaysia's East Coast</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Plan Your Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <h2>Welcome to Terengganu</h2>
+        <p>
+            Explore beautiful beaches, amazing islands,
+            delicious local food and rich culture.
+        </p>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+
+        <article class="card">
+            <h3>Redang Island</h3>
+            <p>Enjoy clear blue water and white sandy beaches.</p>
+            <p>
+                <span class="old-price">RM 299</span>
+                <span class="new-price">RM 199</span>
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Perhentian Island</h3>
+            <p>Experience snorkelling and beautiful scenery.</p>
+            <p>
+                <span class="old-price">RM 350</span>
+                <span class="new-price">RM 250</span>
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Drawbridge Kuala Terengganu</h3>
+            <p>Visit this iconic landmark and enjoy the city view.</p>
+            <p>
+                <span class="old-price">RM 100</span>
+                <span class="new-price">RM 70</span>
+            </p>
+        </article>
+
+        <!-- Meter -->
+        <p class="center">
+            Trip seats filled:
+            <meter min="0" max="40" value="28"></meter>
+            28/40
+        </p>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Explore Terengganu</h2>
+
+        <figure>
+            <video controls width="600" height="350">
+                <source src="terengganu.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+            <figcaption class="caption">
+                Discover the beautiful places in Terengganu.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Trip Form Section -->
+    <section id="trip">
+        <h2>Plan Your Trip</h2>
+
+        <form class="trip-form">
+
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>E-mail:</label>
+            <input type="email" name="email" required>
+
+            <p>Traveller Type:</p>
+
+            <input type="radio" name="traveller" value="Student">
+            Student
+
+            <input type="radio" name="traveller" value="Staff">
+            Staff
+
+            <input type="radio" name="traveller" value="Public">
+            Public
+
+            <p>Interests:</p>
+
+            <input type="checkbox" name="interest" value="Islands">
+            Islands
+
+            <input type="checkbox" name="interest" value="Food">
+            Food
+
+            <input type="checkbox" name="interest" value="Culture">
+            Culture
+
+            <input type="checkbox" name="interest" value="Nature">
+            Nature
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Visit Terengganu</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:visitterengganu@example.com">
+                visitterengganu@example.com
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>
