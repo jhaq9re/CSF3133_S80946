@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>e-Café Campus</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="cafe.css">
+</head>
+
+<body>
+
+    <!-- Errors found and corrected from the original code:
+    Error 1 (Line 7): Wrong HTML comment syntax inside CSS.
+    Error 2 (Line 9): list-style-type: no should be none.
+    Error 3 (Lines 14-15): Wrong order of link states.
+    Error 4 (Line 17): overlined should be overline.
+    Error 5 (Line 18): Missing colon after color.
+    Error 6 (Line 22): Missing dot before highlight class selector.
+    Error 7 (Line 27): Missing closing curly bracket for #intro.
+    Error 8 (Line 41): class intro does not match the original #intro selector.
+    Error 9 (Line 34): Menu link must use #menu.
+    Error 10 (Lines 42 and 46): Duplicate item IDs.
+    Error 11 (Line 53): Missing controls attribute in video.
+    Error 12 (Line 54): Video type must be video/mp4.
+    Error 13: Missing viewport meta tag.
+    Error 14: Missing video caption.
+    -->
+
+    <!-- Header Section -->
+    <header>
+        <h1>e-Café Campus</h1>
+        <p>Fresh Food, Fresh Mood!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+
+        <p class="intro">
+            Freshly brewed coffee and local delights every day.
+        </p>
+
+        <!-- First Menu Item -->
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>
+                Old Price:
+                <span class="old-price">RM 4.50</span>
+                New Price:
+                <span class="highlight">RM 3.50</span>
+            </p>
+        </article>
+
+        <!-- Second Menu Item -->
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>
+                Old Price:
+                <span class="old-price">RM 6.50</span>
+                New Price:
+                <span class="highlight">RM 5.00</span>
+            </p>
+        </article>
+
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Welcome to e-Café Campus!
+                Enjoy our delicious food and drinks.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+
+        <form class="feedback-form">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <p>Visit Type:</p>
+
+            <input type="radio" name="visit" value="Dine-in">
+            Dine-in
+
+            <input type="radio" name="visit" value="Take-away">
+            Take-away
+
+            <p>Favourite Items:</p>
+
+            <input type="checkbox" name="favourite" value="Kopi Tarik">
+            Kopi Tarik
+
+            <input type="checkbox" name="favourite" value="Nasi Lemak">
+            Nasi Lemak
+
+            <input type="checkbox" name="favourite" value="Sandwich">
+            Sandwich
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:ecafe@example.com">
+                ecafe@example.com
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>
