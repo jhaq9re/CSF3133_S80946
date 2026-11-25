@@ -1,0 +1,69 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f5f7fa;
+}
+
+/* Main heading */
+h2 {
+    color: #204d74;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+}
+
+/* Input styling */
+input {
+    padding: 8px;
+    margin-top: 5px;
+    width: 90%;
+}
+
+/* Button styling */
+button {
+    background-color: #287db5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #155a85;
+}
+
+/* Result styling */
+#result {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Grade table styling */
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 300px;
+    background-color: white;
+}
+
+/* Table borders and padding */
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Table heading */
+th {
+    background-color: #204d74;
+    color: white;
+}
